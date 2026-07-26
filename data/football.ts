@@ -13,7 +13,7 @@ export type Team = {
 
 export const player = {
   name: "Сергей Лапин", initials: "SL", number: 11, position: "ПЗ",
-  photo: "/IMAGE 2026-07-25 11:49:42.jpg",
+  photo: "/player-sergey-lapin.jpg",
 };
 
 export const teams: Team[] = [
