@@ -2,7 +2,7 @@ export type Match = {
   id: string; date: string; teamId: string; opponent?: string;
   competitionId?: string; seasonId?: string;
   goalsFor: number; goalsAgainst: number; playerGoals: number; playerAssists: number;
-  minutes?: number;
+  minutes?: number; firstGoalSecond?: number; comment?: string;
   awards?: { motm?: boolean; teamOfRound?: boolean; playerOfRound?: boolean };
 };
 
@@ -47,4 +47,26 @@ export const matches: Match[] = [
   { id: "ararat-1407", date: "2026-07-14", teamId: "ararat", competitionId: "friendly", goalsFor: 7, goalsAgainst: 7, playerGoals: 3, playerAssists: 3 },
   { id: "aura-1907", date: "2026-07-19", teamId: "aura", competitionId: "summer-cup-2", goalsFor: 5, goalsAgainst: 3, playerGoals: 3, playerAssists: 1, awards: { motm: true, teamOfRound: true } },
   { id: "intelcom-2307", date: "2026-07-23", teamId: "intelcom", competitionId: "night-league", goalsFor: 7, goalsAgainst: 2, playerGoals: 0, playerAssists: 2 },
+  {
+    id: "ararat-2807",
+    date: "2026-07-28",
+    teamId: "ararat",
+    goalsFor: 3,
+    goalsAgainst: 1,
+    playerGoals: 0,
+    playerAssists: 1,
+    comment: "Провёл хороший матч: отдал охуевшую передачу шведой перед первым голом и гениальный ассист в касание на третий. Хорошо отборолся, часть матча провёл в защите в меньшинстве и там тоже сыграл уверенно.",
+  },
+  {
+    id: "aura-0108",
+    date: "2026-08-01",
+    teamId: "aura",
+    competitionId: "summer-cup-2",
+    goalsFor: 2,
+    goalsAgainst: 3,
+    playerGoals: 1,
+    playerAssists: 0,
+    firstGoalSecond: 15,
+    comment: "Бездарно вылетели из кубка от слабой команды. Забил на 15-й секунде — это мой самый быстрый гол в карьере. В остальном сыграли просто отвратно; возможно, это матч, после которого у меня горело сильнее всего.",
+  },
 ];

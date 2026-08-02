@@ -103,7 +103,7 @@ export default function Dashboard() {
       <nav aria-label="Навигация">
         <a href="#matches">Матчи</a><a href="#teams">Команды</a><a href="#records">Рекорды</a>
       </nav>
-      <span className="update">Обновлено 23.07.2026</span>
+      <span className="update">Обновлено 01.08.2026</span>
     </header>
 
     <section className="hero">
@@ -185,6 +185,7 @@ export default function Dashboard() {
               <span>Голы<strong>{match.playerGoals}</strong></span><span>Ассисты<strong>{match.playerAssists}</strong></span>
               <span>Вклад в голы<strong>{Math.round((match.playerGoals + match.playerAssists) / match.goalsFor * 100)}%</strong></span>
               {match.awards?.motm && <span className="motm">Игрок матча · MOTM</span>}
+              {match.comment && <div className="match-comment"><span>Комментарий к матчу</span><p>{match.comment}</p></div>}
             </div>
           </article>;
         }) : <div className="empty-state"><b>Матчей в этом срезе пока нет</b><span>Сбросьте один из фильтров или добавьте новую игру в data/football.ts.</span></div>}
@@ -211,7 +212,7 @@ export default function Dashboard() {
         <article className="record-main"><span>Лучший известный матч</span><strong>3+3</strong><h3>Арарат · 14.07</h3><p>Шесть голевых действий в одном матче. Ничья 7:7.</p></article>
         <article><span>Награды</span><strong>{careerStats.motm}</strong><h3>MOTM</h3><p>Последняя — за Ауру 19.07, 3 гола и ассист.</p></article>
         <article><span>Карьера</span><strong>{careerStats.contributions}</strong><h3>Гол + пас</h3><p>{(careerStats.contributions / careerStats.matches).toFixed(2)} результативного действия за матч.</p></article>
-        <article className="record-wide"><span>Последние подробные матчи</span><strong>{detailedStats(matches).winRate}%</strong><h3>Побед</h3><p>{detailedStats(matches).wins} победы · {detailedStats(matches).draws} ничья · {detailedStats(matches).losses} поражение.</p></article>
+        <article className="record-wide"><span>Самый быстрый гол</span><strong>15″</strong><h3>Аура · 01.08</h3><p>Гол на 15-й секунде в матче Summer Cup 2.</p></article>
       </div>
     </section>
 
