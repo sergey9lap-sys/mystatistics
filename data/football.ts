@@ -69,4 +69,14 @@ export const matches: Match[] = [
     firstGoalSecond: 15,
     comment: "Бездарно вылетели из кубка от слабой команды. Забил на 15-й секунде — это мой самый быстрый гол в карьере. В остальном сыграли просто отвратно; возможно, это матч, после которого у меня горело сильнее всего.",
   },
+  {
+    id: "ararat-0408",
+    date: "2026-08-04",
+    teamId: "ararat",
+    competitionId: "rcl-night-league",
+    goalsFor: 5,
+    goalsAgainst: 3,
+    playerGoals: 2,
+    playerAssists: 0,
+  },
 ];
