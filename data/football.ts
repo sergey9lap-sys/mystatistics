@@ -78,5 +78,17 @@ export const matches: Match[] = [
     goalsAgainst: 3,
     playerGoals: 2,
     playerAssists: 0,
+    awards: { teamOfRound: true },
+  },
+  {
+    id: "ararat-1108",
+    date: "2026-08-11",
+    teamId: "ararat",
+    competitionId: "rcl-night-league",
+    goalsFor: 2,
+    goalsAgainst: 1,
+    playerGoals: 1,
+    playerAssists: 0,
+    comment: "Был ебануто тяжёлый матч — буквально выстояли, а я забил победный гол. Мог, конечно, забить ещё один-два: было несколько хороших моментов, но с клюшками всё же сложно играть))",
   },
 ];
