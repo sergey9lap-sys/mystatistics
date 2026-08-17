@@ -91,4 +91,14 @@ export const matches: Match[] = [
     playerAssists: 0,
     comment: "Был ебануто тяжёлый матч — буквально выстояли, а я забил победный гол. Мог, конечно, забить ещё один-два: было несколько хороших моментов, но с клюшками всё же сложно играть))",
   },
+  {
+    id: "titan-1708",
+    date: "2026-08-17",
+    teamId: "titan",
+    competitionId: "friendly",
+    goalsFor: 8,
+    goalsAgainst: 11,
+    playerGoals: 2,
+    playerAssists: 1,
+  },
 ];

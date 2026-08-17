@@ -103,7 +103,7 @@ export default function Dashboard() {
       <nav aria-label="Навигация">
         <a href="#matches">Матчи</a><a href="#teams">Команды</a><a href="#records">Рекорды</a>
       </nav>
-      <span className="update">Обновлено 11.08.2026</span>
+      <span className="update">Обновлено 17.08.2026</span>
     </header>
 
     <section className="hero">
